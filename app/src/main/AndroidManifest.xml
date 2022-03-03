@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="hr.algebra.ivanabilic.nba">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NBA">
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key">
+
+        </meta-data>
+        <activity
+            android:name=".GoogleMapsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PlayerPagerActivity"
+            android:exported="true" />
+
+        <provider
+            android:name=".NbaProvider"
+            android:authorities="hr.algebra.ivanabilic.nba.api.provider"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name=".NbaReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".HostActivity"
+            android:exported="true" />
+
+        <service
+            android:name=".NbaService"
+            android:enabled="true"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

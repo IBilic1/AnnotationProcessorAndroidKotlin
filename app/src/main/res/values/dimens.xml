@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_bottom_splash_screen">100dp</dimen>
+    <dimen name="nhWidth">150dp</dimen>
+    <dimen name="nhHeight">100dp</dimen>
+    <dimen name="marginLeftItems">20dp</dimen>
+    <dimen name="text_size">20sp</dimen>
+    <dimen name="card_radius">9dp</dimen>
+    <dimen name="padding_players">10dp</dimen>
+    <dimen name="marginTop">20dp</dimen>
+</resources>

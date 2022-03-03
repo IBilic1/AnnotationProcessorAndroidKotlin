@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuPlayer"
+        android:title="@string/players"
+        android:icon="@drawable/ball"/>
+
+    <item
+        android:id="@+id/menuAbout"
+        android:title="@string/about"
+        android:icon="@drawable/about"/>
+
+    <item
+        android:id="@+id/menuConfigure"
+        android:title="@string/configure"
+        android:icon="@drawable/edit"/>
+
+    <item
+        android:id="@+id/menuGoogle"
+        android:title="@string/google"
+        android:icon="@drawable/best_black"/>
+
+</menu>

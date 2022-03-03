@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/menuPlayer"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragments">
+
+    <fragment
+        android:id="@+id/menuPlayer"
+        android:name="hr.algebra.ivanabilic.nba.PlayersFragment"
+        android:label="@string/players"
+        tools:layout="@layout/fragment_players" />
+
+    <fragment
+        android:id="@+id/menuAbout"
+        android:name="hr.algebra.ivanabilic.nba.AboutFragment"
+        android:label="@string/about"
+        tools:layout="@layout/fragment_about" />
+
+    <activity
+        android:id="@+id/menuGoogle"
+        android:name="hr.algebra.ivanabilic.nba.GoogleMapsActivity"
+        android:label="@string/google"
+        tools:layout="@layout/activity_google_maps"
+        ></activity>
+
+    <fragment
+        android:id="@+id/menuConfigure"
+        android:name="hr.algebra.ivanabilic.nba.ConfigureFragment"
+        android:label="@string/configure"
+        tools:layout="@layout/fragment_configure" />
+
+
+
+</navigation>
